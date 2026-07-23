@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Gift Screen -->
+    <div id="giftBox">
+
+        <div class="gift" onclick="openGift()">
+            🎁
+        </div>
+
+        <h1>A Special Surprise For You ✨</h1>
+
+        <p>🔐 Hint: special date </p>
+
+        <button onclick="openGift()">
+            Open Gift 🎁
+        </button>
+
+    </div>
+
+
+    <!-- Birthday Screen -->
+    <div id="birthday" class="hidden">
+
+        <h1>🎉 Happy Birthday 🎉</h1>
+
+        <div class="teddy">
+            🧸
+        </div>
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <h2>Wishing You A Magical Day ✨</h2>
+
+        <h2>🎉 Happy Birthday, Arpita! 🎉</h2>
+
+        <div class="gallery">
+            <img src="photo1.jpg.jpeg" alt="Photo 1">
+            <img src="photo2.jpg.jpeg" alt="Photo 2">
+            <img src="photo3.jpg.jpeg" alt="Photo 3">
+        </div>
+
+        <div id="message">
+
+            <h2>💌 Dear Betuuu 💌</h2>
+
+            <p>
+                Aaj ka din bahut hi special hai, kyunki aaj meri sabse pyaari behen ka birthday hai. ❤️
+            </p>
+
+            <p>
+                Main dua karta hoon ki tumhari zindagi hamesha khushiyon,
+                pyaar aur safalta se bhari rahe. Tumhare saare sapne poore hon
+                aur tum hamesha isi tarah muskurati raho.
+            </p>
+
+            <p>
+                Thank you for being such a caring and wonderful sister.
+                Tum meri life ka bahut important hissa ho,
+                aur main hamesha tumhare saath rahunga.
+            </p>
+
+            <p>
+                🎂 Happy Birthday once again, Arpita!
+                (meri pyari dayan) 🎂
+            </p>
+
+            <p>
+                Love You Forever ❤️✨ 🌟
+            </p>
+        </div>
+
+        <button onclick="createHearts()">
+            💖 Make A Wish
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Balloons -->
+<div class="balloon" style="left:10%;animation-duration:8s;">🎈</div>
+<div class="balloon" style="left:30%;animation-duration:10s;">🎈</div>
+<div class="balloon" style="left:50%;animation-duration:7s;">🎈</div>
+<div class="balloon" style="left:70%;animation-duration:9s;">🎈</div>
+<div class="balloon" style="left:90%;animation-duration:11s;">🎈</div>
+
+
+<!-- Password Modal -->
+<div id="passwordModal" class="modal hidden">
+
+    <div class="passwordBox">
+        <div class="heart heart1">❤️</div>
+        <div class="heart heart2">💖</div>
+        <div class="heart heart3">💕</div>
+        <div class="heart heart4">💗</div>
+        <div class="heart heart5">💓</div>
+        <div class="heart heart6">💞</div>
+
+        <div class="lockIcon">🔐</div>
+
+        <h2>Secret Surprise!</h2>
+
+        <p>Gift kholne ke liye password enter karo ❤️</p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter Password"
+        >
+
+        <button onclick="checkPassword()">
+            Unlock Gift 🔓
+        </button>
+
+        <p id="errorMessage"></p>
+
+        <button class="closeBtn" onclick="closePassword()">
+            Cancel
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
